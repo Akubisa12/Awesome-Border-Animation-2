@@ -1,0 +1,73 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #25252b;
+}
+
+.container{
+  height: 400px;
+  width: 400px;
+  background: #222;
+  border-radius: 15px;
+  position: relative;
+  overflow:hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .cover{
+  position: absolute;
+  height: 385px;
+  width: 385px;
+  background: #25252b;
+  border-radius: 15px;
+}
+
+.container span{
+  position: absolute;
+  inset: -100px;
+}
+
+span:nth-child(1){
+  background: conic-gradient(transparent,transparent,transparent,#0bf);
+  filter: blur(8px);
+  animation: rotation 4s linear infinite;
+}
+
+@keyframes rotation {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+span:nth-child(2){
+  background: conic-gradient(transparent,transparent,transparent,#ff4484);
+  filter: blur(8px);
+  animation: rotation 4s linear infinite;
+  animation-delay: -2s;
+}
+
+span:nth-child(3){
+  background: conic-gradient(transparent,transparent,transparent,#ffeb3b);
+  filter: blur(8px);
+  animation: rotation 4s linear infinite;
+  animation-delay: -3s;
+}
+
+span:nth-child(4){
+  background: conic-gradient(transparent,transparent,transparent,#ffeb3b);
+  filter: blur(8px);
+  animation: rotation 4s linear infinite;
+  animation-delay: -5s;
+}
